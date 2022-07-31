@@ -658,6 +658,10 @@ nav{
     display: none;
 }
 @media  (min-width: 981px) and (max-width: 1023px) {
+    
+    
+    
+    
     .categoriasFotos{    
         grid-area: categoriasFotos ;
         display: grid;
@@ -695,6 +699,18 @@ nav{
      }
     
      @media (min-width:600px) and (max-width: 980px) {
+        
+        #headContenedor {
+    
+            display:grid;
+            grid-template: 
+                 "promo promo promo " 50px
+                 "iconos logo nada" 150px;   
+            background-image:url(../img/fondo4.jpg) ; 
+            
+                
+        }
+        
         .categoriasFotos{    
             grid-area: categoriasFotos ;
             display: grid;
@@ -718,17 +734,17 @@ nav{
         
         
        .promo{
-        font-size: 15px;
+        font-size: 22px;
        }
        .iconos{
         padding: 2px;
        }
        
        .categoriasTitulo >h1 {
-        font-size: 20px;
+        font-size: 35px;
        }
        .seguinosInstragram h2{
-        font-size: 50px;
+        font-size: 70px;
        }
     
        .nuestrasMarcas h2{
@@ -746,7 +762,7 @@ nav{
     }
     
     .phone {
-        height: 100px;
+        height: 120px;
         display:flex;
         justify-content: space-between;   
         align-items: center; 
@@ -765,8 +781,8 @@ nav{
         height: 100%;
         display:grid;
         grid-template: 
-            "header" 40px
-             "nav"   100px
+            "header" 50px
+             "nav"   130px
              "main"  auto
              "footer" auto;
     }
@@ -774,19 +790,19 @@ nav{
         display: none;
      }
     .fa-brands {
-        font-size: 23px;
+        font-size: 45px;
         
     }
     .fa-regular{
-        font-size: 23px;
+        font-size: 45px;
     }
     .fa-bars{
-        font-size: 25px;
+        font-size: 45px;
         position: relative;
     }
     .pPhone{
         margin: 0px;
-        font-size: 25px;
+        font-size: 45px;
        
     }
     .slide img{
@@ -794,6 +810,7 @@ nav{
     }
     .slide {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
      .footerContenedor{
         display:none;
@@ -824,7 +841,7 @@ nav{
         list-style: none;
         text-align: left;     
         transition: all 1s;
-        padding-top: 120px;
+        padding-top: 150px;
         
     
      }
@@ -841,12 +858,12 @@ nav{
      .menuPhone li a{
         text-decoration: none;   
         color: black;
-        font-size: 20px;
+        font-size: 35px;
      }
      .menuPhone li a:hover{
         text-decoration: none;   
         color: white;
-        font-size: 20px;
+        font-size: 35px;
         
      }
      
@@ -880,8 +897,8 @@ nav{
     
     }
     .catalogo img {
-        width: 600px;
-        height: 250px;
+        width: 720px;
+        height: 300px;
         margin-top: 40px;
     }
     .catalogoContenedorInfo img{
@@ -894,11 +911,13 @@ nav{
     }
     
     .catalogoContenedor h1 ,.comoComprarTitulo h1 ,.contactoTitulo h1 ,.tituTalles h1 ,.categoriasTitulo h1{
-        font-size: 35px;
+        font-size: 45px;
     }
-    
+    .categoriasFotos {
+        margin-top: 30px;
+    }
     .seguinosInstragram h2{
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 40px;
     }
     .preguntasTitulo h1 {
@@ -968,11 +987,13 @@ nav{
     
     .mostrarMenuAyudarteMod ,.mostrarMenuNosotrosteMod ,.mostrarMenuInformarMod,.mostrarMenuMediosrMod,.mostrarMenuSeguinosrMod{
         text-align: left;
+        font-size: 35px;
+        padding-bottom: 20px;
     }
         
         
     .ayudarteUl li>p ,.NosotrosUl li>p ,.InformarUl li>p ,.SeguinosUl li>p ,.MediosUl li>p{
-        font-size: 15px;
+        font-size: 30px;
         font-weight: lighter ;
     }
     .ayudarteUl ,.NosotrosUl ,.InformarUl ,.SeguinosUl ,.MediosUl {
@@ -990,7 +1011,10 @@ nav{
         color:#C2E4EC;
         text-decoration: none;
     }
-    
+    .copyright{
+        margin-top: 30px;
+        font-size: 20px;
+    }
     }
 
 @media (min-width:1px) and (max-width: 599px) {
