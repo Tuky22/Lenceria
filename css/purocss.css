@@ -790,15 +790,20 @@ nav{
         display: none;
      }
     .fa-brands {
-        font-size: 45px;
+        font-size: 30px;
+        padding-left: 10px;
+
         
     }
     .fa-regular{
-        font-size: 45px;
+        font-size: 30px;
+        padding-left: 10px;
+       
     }
     .fa-bars{
         font-size: 45px;
         position: relative;
+        padding-right: 20px;
     }
     .pPhone{
         margin: 0px;
@@ -897,12 +902,12 @@ nav{
     
     }
     .catalogo img {
-        width: 720px;
+        width: 740px;
         height: 300px;
         margin-top: 40px;
     }
     .catalogoContenedorInfo img{
-           height: 700px;
+           height: 650px;
            width: 700px;
     }
     .tallesContenedorInfo img{
@@ -1015,6 +1020,7 @@ nav{
         margin-top: 30px;
         font-size: 20px;
     }
+   
     }
 
 @media (min-width:1px) and (max-width: 599px) {
