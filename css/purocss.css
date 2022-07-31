@@ -435,8 +435,10 @@ nav{
     opacity: 50%;
 }
 
-.seguinosInstragram h1{
+.seguinosInstragram h2{
     padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
  /*    datos img  */
@@ -790,13 +792,13 @@ nav{
         display: none;
      }
     .fa-brands {
-        font-size: 30px;
+        font-size: 35px;
         padding-left: 10px;
 
         
     }
     .fa-regular{
-        font-size: 30px;
+        font-size: 35px;
         padding-left: 10px;
        
     }
@@ -924,6 +926,7 @@ nav{
     .seguinosInstragram h2{
         font-size: 40px;
         margin-top: 40px;
+        margin-bottom: 40px;
     }
     .preguntasTitulo h1 {
         font-size: 20px;
@@ -1020,7 +1023,16 @@ nav{
         margin-top: 30px;
         font-size: 20px;
     }
-   
+     /*logo  */
+    .pPhone a {
+        color: black;
+        text-decoration: none;
+    }
+    .pPhone a:hover {
+        color: black;
+        text-decoration: none;
+    }
+
     }
 
 @media (min-width:1px) and (max-width: 599px) {
@@ -1102,18 +1114,19 @@ nav{
     display: none;
  }
 .fa-brands {
-    font-size: 16px;
+    font-size: 20px;
     
 }
 .fa-regular{
-    font-size: 16px;
+    font-size: 20px;
 }
 .fa-bars{
-    font-size: 17px;
+    font-size: 20px;
     position: relative;
 }
 .pPhone{
     margin: 0px;
+    font-size: 20px;
    
 }
 .slide img{
@@ -1222,6 +1235,8 @@ nav{
 
 .seguinosInstragram h2{
     font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .preguntasTitulo h1 {
     font-size: 20px;
@@ -1312,7 +1327,15 @@ nav{
     color:#C2E4EC;
     text-decoration: none;
 }
-
+   /*logo  */
+   .pPhone a {
+    color: black;
+    text-decoration: none;
+}
+.pPhone a:hover {
+    color: black;
+    text-decoration: none;
+}
 }
 
 
