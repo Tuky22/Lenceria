@@ -1,0 +1,994 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+body ,main {
+    height: 100%;
+}
+.gridContainer{
+    height: 100%;
+    display:grid;
+    grid-template: 
+        "header" 190px
+         "nav"   50px
+         "main"  auto
+         "footer" auto;
+}
+header {
+    grid-area: header;
+}
+nav {
+    
+    grid-area: nav;
+    z-index: 5;
+}
+main {
+        grid-area: main;
+        text-align: center;
+        
+       
+}
+    /*  footer */ 
+footer{
+        grid-area: footer;
+        background-color:rgb(32, 30, 30);
+        margin-top: 30px;         
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+.footerContenedor{
+    display: grid;
+    grid-template: "info"
+                   "copy";
+    justify-content: center;
+}   
+.footerContenedorInfo {
+    
+    grid-area: info;
+    display: grid;
+    grid-template: 
+        "ayudarte preguntas informacion instagram pagos" ;
+          
+    color:white;
+    font-weight: lighter;
+    gap: 40px;   
+   justify-content: center;
+   
+}  
+.footerColor {
+    font-weight: bold;
+    color:#F7C4D5
+}
+
+.footerContenedor p a {
+    text-decoration: none;
+    color:white;
+}
+
+.footerContenedor p a:hover {
+    text-decoration: none;
+    color:#C2E4EC;
+}
+
+.ayudarte {
+    grid-area: ayudarte;
+    
+    
+}
+.preguntas {
+    grid-area: preguntas;
+    
+    
+}
+
+.informacion {
+    grid-area:informacion;
+    
+    
+}
+
+.instagram {
+    grid-area: instagram;
+    
+    
+}
+
+.pagos{
+    grid-area: pagos;
+    
+    
+}
+
+
+.copyright {
+    grid-area: copy;
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 10px;
+    
+}
+
+
+
+
+#headContenedor {
+    
+    display:grid;
+    grid-template: 
+         "promo promo promo " 40px
+         "iconos logo nada" 150px;   
+    background-image:url(../img/fondo4.jpg) ; 
+    
+        
+}
+.nada{
+    grid-area: nada;
+}
+
+.iconos{
+    padding-top: 10px;
+    padding-left:50px;
+    grid-area: iconos;
+}
+.iconosPhone i:hover{
+    color:#40abaf;
+ }
+.iconos i:hover{
+    color:#40abaf;
+}
+.logo{    
+    text-align: center;
+    grid-area: logo;
+    padding: 10px;
+    
+}
+
+.face  
+    { background: transparent;
+        }
+.logoImg{
+    width: 300px;
+    height: 130px;
+    position: relative;
+    right:80px;    
+}
+
+.promo{    
+    grid-area: promo;
+    background-color: #C2E4EC;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+
+}
+
+
+.palitos {    
+    display: inline-block;
+    position: relative;    
+}
+
+.palitos::after,.palitos::before {
+        content: " ";
+        position: absolute;
+        width: 120px;
+        height: 5px;
+        background-color: black;
+        top: 0.7em;
+
+}
+
+.palitos::after{
+    left:-140px;       
+    background-image: url(../img/palitoleftpink.jpg);
+    background-size:120px 5px;
+   
+}
+.palitos::before {
+    right:-140px;
+    background-image: url(../img/palitorightpink.jpg);
+    background-size:120px 5px;
+}
+
+.palitosCeles{    
+    display: inline-block;
+    position: relative;    
+}
+
+.palitosCeles::after,.palitosCeles::before {
+        content: " ";
+        position: absolute;
+        width: 120px;
+        height: 5px;
+        background-color: black;
+        top: 0.7em;
+
+}
+
+.palitosCeles::after{
+    left:-140px;       
+    background-image: url(../img/palitoleftceles.jpg);
+    background-size:120px 5px;
+   
+}
+.palitosCeles::before {
+    right:-140px;
+    background-image: url(../img/palitorightceles.jpg);
+    background-size:120px 5px;
+}
+
+
+.fa-facebook-f {
+    font-size: 20px;
+    padding-right: 5px;
+
+
+}
+
+.fa-instagram{
+    font-size: 20px;
+    padding-right: 5px;
+}
+.fa-whatsapp{
+    font-size: 20px;
+    padding-right: 5px;
+}
+.fa-envelope{
+    font-size: 20px;
+}
+
+#gridContenedorMain {
+    
+    display: grid;
+    grid-template: 
+       "banner" auto
+       "categorias" auto
+       "datos" auto
+       "seguinosInstragram" 
+       "nuestrasMarcas" ;
+}
+
+
+.banner {
+    grid-area: banner;    
+    
+  
+   
+}
+
+
+.slider2 {
+   display: none;
+}
+
+
+
+
+.categorias{
+    
+    grid-area: categorias;
+}
+.datos {   
+    grid-area: datos;
+   
+}
+.seguinosInstagram {
+    background-color: yellowgreen;
+    grid-area: seguinosInstragram;
+}
+.nuestrasMarcas{
+   
+    grid-area: nuestrasMarcas;
+}
+
+
+
+.categorias{
+    
+    display:grid;
+    grid-template: 
+     "categoriasTitulo" 100px
+     "categoriasFotos" auto;
+    
+}
+.categoriasTitulo{
+    grid-area: categoriasTitulo;
+    text-align: center;
+    padding: 30px;
+}
+.categoriasFotos{
+    
+    grid-area: categoriasFotos ;
+    display: grid;
+    grid-template: 
+        "catimg1 catimg2 catimg3" 
+        "catimg4 catimg5 catimg6" ;
+    gap:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+          
+   
+} 
+
+.catimg1 {
+    grid-area: catimg1;
+    
+}
+.catimg2 {
+    grid-area: catimg2;
+    
+    
+}
+.catimg3 {
+    grid-area: catimg3;
+    
+}
+.catimg4 {
+    grid-area: catimg4;
+   
+}
+.catimg5 {
+    grid-area: catimg5;
+    
+}
+.catimg6 {
+    grid-area: catimg6;
+   
+}
+.imgGale{
+    width: 100%;
+    object-fit: cover;
+   
+}
+
+
+
+
+nav{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.menuHorizontal {
+    list-style: none;    
+    text-align: center;
+    
+}
+.menuHorizontal >li {
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    
+}
+.menuHorizontal > li > a {
+    
+   text-decoration: none;
+   color: black;
+      
+}
+.menuHorizontal > li:hover {
+    
+    text-decoration: none;     
+     background-color: #C2E4EC;  
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+     transform: scale(1.1);
+     border-radius: 1px;
+     transition: all 0.3s;
+ }
+.menuVertical {
+    display:none;
+    position:absolute;
+    background-color: #C2E4EC;
+    list-style: none;
+    width: 114px;    
+    top:45px;
+    left:0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,0.5);
+    
+
+}
+.menuVertical > li {
+    padding: 15px;
+}
+.menuVertical > li:hover {
+    display:block;
+    
+}
+
+.menuHorizontal li:hover .menuVertical {
+    display:block;
+}
+.menuVertical > li > a {
+    text-decoration: none;
+    color:black;
+}
+.menuVertical >li > a:hover{
+    color:white;
+}
+.phone {
+    display:none;
+}
+
+/* seguinos instagram */
+.imagenInstragramContenedor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagenInstragramContenedor img{
+    width: 300px;
+    height: 300px;
+}
+
+.imagenInstragramContenedor img:hover {
+    opacity: 50%;
+}
+
+.seguinosInstragram h1{
+    padding-bottom: 30px;
+}
+
+ /*    datos img  */
+
+
+ .datos{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+ }
+
+ .datos img{
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .iconos a{
+    color:black;
+    text-decoration: none;
+ }
+  /*        catalogo     y talles y cada 1 de las cate de los catalogos       */
+
+
+
+
+.catalogoContenedorInfo ,.tallesContenedorInfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+
+}
+.catalogoContenedorInfo img ,{
+    
+    height: 570px;
+     width: 800px;
+     
+     
+
+}
+
+.tallesContenedorInfo img {
+    height: 70%;
+    width: 70%;
+}
+.catalogoContenedorInfo iframe {
+    
+    height: 570px;
+     width: 800px;
+   
+
+}
+
+.catalogoContenedor h1 ,.tallesContenedor h1{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+
+/*    contacto */ 
+
+.formContenedor {
+    background-color:#C2E4EC;
+    text-align: center;
+    height: 550px;
+    padding-top: 15px;    
+    width: 500px;
+    
+    
+    
+    
+    
+
+}
+.contactoTitulo,.preguntasTitulo , .nosotrosTitulo , .comoComprarTitulo{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    
+}
+
+
+
+.contactoNombre , .contactoCorreo {
+    
+    padding-left: 15px;
+    display: flex;
+}
+
+.contactoNombre input, .contactoCorreo input{
+    width: 300px;
+}
+.contactoComentarios label{
+    padding-right: 360px;
+    
+    
+}
+
+.contactoComentarios textarea{
+    width: 460px;
+    height: 270px;
+}
+.contactoNombre {
+    padding-top: 15px;
+}
+
+.contactoContenedor {
+    
+    
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    flex-wrap: wrap;    
+}
+
+.contactoContenedor p{
+    font-size: 30px;
+}
+
+.contenedorDatos{
+    background-image: url(../img/contacto1.jpg);
+    width: 500px;
+    height: 550px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+.contenedorDatos i{
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+.contenedorDatos i:hover{
+    color:#F7C4D5
+}
+
+.contenedorDatos a{
+    color:black;
+    text-decoration: none;
+}
+/*    nosotros   y preguntas frecuentes    y como comprar*/   
+
+.nosotrosContenedorInfo , .preguntasContenedorInfo , .comoComprarContenedorInfo{
+   
+    
+    
+    width: 70%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: left;
+    
+    
+
+}
+
+
+.nosotrosContenedor   , .preguntasContenedor ,.comoComprarContenedor {
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.preguntasContenedorInfo{
+    margin-top: 25px;
+}
+.nosotrosContenedorInfo p  ,.preguntasContenedorInfo p  {
+    padding-top: 20px;    
+    padding-bottom: 20px;
+    
+}
+
+.nosotrosContenedorInfo h2 ,.preguntasContenedorInfo h2{    
+    background-color: #C2E4EC;
+    font-size: 28px;
+}
+
+
+.comoComprarContenedorInfo ol li {
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+.comoComprarContenedorInfo p {
+    font-weight: bold;
+    padding-top:10px;
+
+}
+
+.comoComprarContenedorInfo a {
+    color:#4ab7bb;
+}
+
+
+
+
+
+/*  footer none */
+
+.footerContenedorPhone{
+    display: none;
+}
+
+/* nuestras marcas */
+
+.nuestrasMarcas{
+    display:none
+}
+.formContenedor {
+    display: none;
+}
+@media  (min-width: 600px) and (max-width: 1023px) {
+    .categoriasFotos{    
+        grid-area: categoriasFotos ;
+        display: grid;
+        grid-template: 
+            "catimg1 catimg2 "  
+            "catimg3 catimg4 " 
+             "catimg5 catimg6" ;
+        gap:10px;
+        padding-left: 10px;
+        padding-right: 10px;      
+    } 
+  
+        .banner {
+    
+            grid-area: banner;    
+           
+        } 
+    .atencion {
+        display:none;
+    }
+    .pagos{
+        padding-right: 30px;
+    }
+    .footerContenedor{
+        gap:0px;
+        font-size: 15px;
+    }
+    .footerContenedorInfo {
+        font-size: 14px;
+        gap:28px
+    }
+    .promo{
+        font-size: 14px;
+    }
+     }
+    
+
+
+@media (min-width:1px) and (max-width: 599px) {
+    .categoriasFotos{    
+        grid-area: categoriasFotos ;
+        display: grid;
+        grid-template: 
+            "catimg1" 
+            "catimg2 "  
+            "catimg3" 
+            "catimg4 " 
+             "catimg5" 
+             "catimg6" ;
+        gap:10px;
+        padding-left: 10px;
+        padding-right: 10px;      
+    } 
+    .banner {
+    
+        grid-area: banner;    
+       
+        
+    } 
+    
+    
+   .promo{
+    font-size: 10px;
+   }
+   .iconos{
+    padding: 2px;
+   }
+   
+   .categoriasTitulo >h1 {
+    font-size: 20px;
+   }
+   .seguinosInstragram >h2{
+    font-size: 20px;
+   }
+
+   .nuestrasMarcas h2{
+    font-size: 20px;
+   }
+   .logoImg{
+    width: 300px;
+    height: 130px;
+    position: relative;
+    right:60px;    
+}
+.menuHorizontal{
+    display:none;
+    
+}
+
+.phone {
+    height: 50px;
+    display:flex;
+    justify-content: space-between;   
+    align-items: center; 
+    padding-left: 5px;
+    padding-right: 10px;
+    background-image: url(../img/fondo4.jpg);
+}
+.phone p {
+    padding-right: 35px;
+}
+.logo {
+    display:none;
+}
+.gridContainer{
+    height: 100%;
+    display:grid;
+    grid-template: 
+        "header" 30px
+         "nav"   50px
+         "main"  auto
+         "footer" auto;
+}
+ .iconos{
+    display: none;
+ }
+.fa-brands {
+    font-size: 16px;
+    
+}
+.fa-regular{
+    font-size: 16px;
+}
+.fa-bars{
+    font-size: 17px;
+    position: relative;
+}
+.pPhone{
+    margin: 0px;
+   
+}
+.slide img{
+    height: 500px;
+}
+.slide {
+    display: none;
+}
+ .footerContenedor{
+    display:none;
+ }
+
+
+ /* menu phone */
+
+ #menuNavPhone{
+   display: none;
+ }
+
+ .menuNavPhoneLabel{
+    display: block;
+ }
+ .menuNavPhoneLabel{
+    cursor: pointer;
+ }
+
+ .menuPhone {
+    
+    position: fixed;
+    background-color: #C2E4EC;
+    top: 0px;   
+    left: -600px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+    width: 100%;
+    list-style: none;
+    text-align: left;     
+    transition: all 1s;
+    padding-top: 100px;
+    
+
+ }
+
+ .menuPhone li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    border-top: 1px solid rgb(207, 199, 199);
+       
+    
+ }
+
+ .menuPhone li a{
+    text-decoration: none;   
+    color: black;
+    font-size: 15px;
+ }
+ .menuPhone li a:hover{
+    text-decoration: none;   
+    color: white;
+    font-size: 15px;
+    
+ }
+ 
+ 
+
+ .menuNavPhoneLabel i{
+    
+    z-index: 150;
+ }
+#menuNavPhone:checked ~ .menuPhone{
+    left: 0px;
+}
+ .fa-bars:hover {
+    color:white;
+ }
+ .atencion {
+    display: none;
+ }
+ .envio {
+    display:none;
+ }
+ .iconosPhone a{
+    color:black;
+    text-decoration: none;
+ }
+ .catalogoContenedorInfo iframe {
+    
+    height: 570px;
+     width: 400px;
+   
+
+}
+
+.catalogoContenedorInfo img{
+       height: 400px;
+       width: 400px;
+}
+.tallesContenedorInfo img{
+    height: 240px;
+    width: 450px;
+}
+
+.catalogoContenedor h1 ,.comoComprarTitulo h1 ,.contactoTitulo h1 ,.tituTalles h1 ,.categoriasTitulo h1{
+    font-size: 23px;
+}
+
+.seguinosInstragram h2{
+    font-size: 20px;
+}
+.preguntasTitulo h1 {
+    font-size: 20px;
+}
+.nosotrosTitulo {
+    display: none;
+}
+.preguntasContenedorInfo h2{
+    font-size: 18px;
+}
+
+.preguntasContenedorInfo p {
+    font-size: 14px;
+}
+.comoComprarContenedorInfo {
+    font-size: 16px;
+}
+.nosotrosContenedorInfo {
+    margin-top: 30px;
+}
+
+
+/*     footer phone */
+
+.footerContenedorPhone {
+    display: block;
+}
+.footerContenedorPhoneInfo{
+    text-align: center;
+}
+.colorPhone p{
+    color: #F7C4D5;
+    
+}
+.ColorPhone i{
+    color:#C2E4EC;
+}
+
+
+
+#mostrarMenuAyudarte, #mostrarMenuNosotros ,#mostrarMenuInformar ,#mostrarMenuSeguinos,#mostrarMenuMedios{
+    display:none;
+}
+.footerContenedorPhoneInfo label{
+    display:block;
+    
+
+}
+.footerContenedorPhoneInfo label:hover{
+    cursor:pointer;
+}
+
+.ayudarteUl ul ,.NosotrosUl ul ,.InformarUl ul,.SeguinosUl ul , .MediosUl ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;      
+    padding-left: 0;
+    
+}
+.ayudarteUl ul>li ,.NosotrosUl ul>li ,.InformarUl ul>li, .SeguinosUl ul>li ,.MediosUl ul>li{
+    color:white;    
+    text-align: left;
+    
+   
+}   
+
+.mostrarMenuAyudarteMod ,.mostrarMenuNosotrosteMod ,.mostrarMenuInformarMod,.mostrarMenuMediosrMod,.mostrarMenuSeguinosrMod{
+    text-align: left;
+}
+    
+    
+.ayudarteUl li>p ,.NosotrosUl li>p ,.InformarUl li>p ,.SeguinosUl li>p ,.MediosUl li>p{
+    font-size: 15px;
+    font-weight: lighter ;
+}
+.ayudarteUl ,.NosotrosUl ,.InformarUl ,.SeguinosUl ,.MediosUl {
+    display: none;
+}
+#mostrarMenuAyudarte:checked ~ .ayudarteUl ,#mostrarMenuNosotros:checked ~ .NosotrosUl ,#mostrarMenuInformar:checked ~ .InformarUl ,#mostrarMenuSeguinos:checked ~ .SeguinosUl,#mostrarMenuMedios:checked ~ .MediosUl {
+    display: block;
+}
+
+.NosotrosUl a ,.InformarUl a,.SeguinosUl a,.MediosUl a{
+    color:white;
+    text-decoration: none;
+}
+.NosotrosUl a:hover ,.InformarUl a:hover,.SeguinosUl a:hover,.MediosUl a{
+    color:#C2E4EC;
+    text-decoration: none;
+}
+
+}
+
+
+
+
+           
