@@ -743,7 +743,7 @@ nav{
         font-size: 17px;
         position: fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 3;
        }
        .iconos{
         padding: 2px;
