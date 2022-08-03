@@ -740,7 +740,10 @@ nav{
         
         
        .promo{
-        font-size: 20px;
+        font-size: 17px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
        }
        .iconos{
         padding: 2px;
@@ -796,24 +799,24 @@ nav{
         display: none;
      }
     .fa-brands {
-        font-size: 35px;
+        font-size: 30px;
         padding-left: 10px;
 
         
     }
     .fa-regular{
-        font-size: 35px;
+        font-size: 30px;
         padding-left: 10px;
        
     }
     .fa-bars{
-        font-size: 45px;
+        font-size: 30px;
         position: relative;
         padding-right: 20px;
     }
     .pPhone{
         margin: 0px;
-        font-size: 45px;
+        font-size: 30px;
        
     }
     .slide img{
@@ -833,7 +836,12 @@ nav{
      #menuNavPhone{
        display: none;
      }
-    
+     
+     .phone {
+        position: fixed;
+        width: 100%;
+        top:40px;
+     }
      .menuNavPhoneLabel{
         display: block;
      }
@@ -853,6 +861,7 @@ nav{
         text-align: left;     
         transition: all 1s;
         padding-top: 150px;
+        
         
     
      }
@@ -1064,6 +1073,9 @@ nav{
     
    .promo{
     font-size: 10px;
+    position: fixed;
+        width: 100%;
+        z-index: 1;
    }
    .iconos{
     padding: 2px;
@@ -1098,6 +1110,9 @@ nav{
     padding-left: 5px;
     padding-right: 10px;
     background-image: url(../img/fondo4.jpg);
+    position: fixed;
+    width: 100%;
+    top:29px;
 }
 .phone p {
     padding-right: 35px;
