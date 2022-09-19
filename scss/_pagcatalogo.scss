@@ -1,0 +1,46 @@
+/*                pagina catalogo                    */
+
+.catalogoContenedor {    
+  display: grid;
+  grid-template: 
+    "tituCatalogo" auto
+    "catalogoContenedorInfo" auto;
+}
+
+ .tituCatalogo {
+   grid-area:tituCatalogo;
+   text-align: center;
+   margin-top: 30px;
+ }
+
+
+ .catalogoContenedorInfo {
+    grid-area:catalogoContenedorInfo ;    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    p{
+      font-size: 50px;
+      padding-top: 150px;
+      padding-bottom: 250px;
+    }
+ }
+
+ .catalogoContenedorInfo{
+    img,iframe{
+      @include tamanio (590px,590px);      
+    }   
+  }
+
+  .imgTalle {    
+    img{
+      width: 1200px;
+      height: 550px;
+    }
+    
+  }

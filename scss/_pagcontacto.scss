@@ -1,0 +1,127 @@
+/*   pagina  contacto */ 
+
+.formContenedor {
+    background-color:$colorCeles;
+    text-align: center;    
+    padding-top: 15px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);  
+    @include tamanio (500px,550px); 
+   }
+   
+   .contactoTitulo,.preguntasTitulo , .nosotrosTitulo , .comoComprarTitulo{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-align: center;
+    z-index: -1;
+   }
+
+.contactoNombre , .contactoCorreo {
+   padding-left: 15px;
+   display: flex;
+   flex-direction: column;
+   text-align: left;   
+    
+   input {
+      width: 460px;
+      outline: none; 
+      border: 0; 
+      background-color: rgba(0, 0, 0, 0.158); 
+      box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0,0.3); 
+      padding-left: 10px;
+      color:white;
+   }  
+}
+
+.contactoComentarios{ 
+   display: flex;  
+   flex-direction: column;
+   padding-left: 15px;
+   label{      
+      text-align: left;       
+      p{
+         font-size: 17px;         
+         padding-bottom: 5px;
+         padding-top: 15px;
+      }        
+   }
+
+   textarea {
+      @include tamanio (460px,270px);           
+      resize: none; 
+      outline: none;         
+      border: 0;
+      background-color: rgba(0, 0, 0, 0.158); 
+      box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0,0.3);  
+      padding:10px;
+      color:white;        
+                 
+   }
+}
+
+.contactoNombre {
+   padding-top: 15px;
+}
+
+.contactoContenedor {   
+   padding-top: 30px;
+   text-align: center;      
+   display: flex;
+   justify-content: center;
+   gap:50px;
+   flex-wrap: wrap;   
+   margin-bottom: 30px; 
+   p{
+      font-size: 30px; 
+   }
+}
+
+.botonEnviar{
+   margin-top: 25px;
+   margin-right: 30px;   
+   background-color: rgba(0, 0, 0, 0.158);
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+   padding: 8px;   
+   cursor: pointer;
+   width: 100px;
+   border: 0;
+   &:hover {
+      color:white;
+   }
+}
+
+.botonBorrar{
+   margin-top: 25px;
+   margin-left: 30px;   
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+   background-color: rgba(0, 0, 0, 0.158);
+   padding: 5px;
+   cursor: pointer;
+   width: 100px;
+   padding: 8px;
+   border: 0;  
+   &:hover {
+      color:white;
+   }
+}
+
+
+
+.contenedorDatos{
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0,0.5);
+   background-image: url(../img/contacto1.jpg);
+   @include tamanio (500px,550px);   
+   display: flex;
+   justify-content:center;
+   align-items: flex-end;
+   i{
+      padding-bottom: 50px;
+      font-size: 30px;
+      &:hover {
+         color:white;         
+      }
+   }  
+   a{
+      color:black;
+     text-decoration: none;
+   } 
+}    
