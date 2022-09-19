@@ -6,7 +6,7 @@
         grid-area: header;
         display: grid ;
         grid-template: 
-            "promo" 40px   
+            "promo" 30px   
             "contenerInfoHeader" 70px;                 
     }
 
@@ -17,7 +17,7 @@
         position: fixed;
         left:0;
         top:0;
-        @include tamanio (100%,40px);       
+        @include tamanio (100%,30px);       
         z-index: 5;
         font-size: 13px;
     }
@@ -33,7 +33,7 @@
         @include tamanio (100%,70px);      
         position:fixed;
         left: 0px;
-        top: 40px;            
+        top: 30px;            
         z-index: 5;
     }
 
@@ -106,7 +106,7 @@
         a{
             color:black;
             text-decoration: none;            
-            margin-right: 25px;            
+            margin-right: 45px;            
             font-size: 17px;
         }        
     }    
